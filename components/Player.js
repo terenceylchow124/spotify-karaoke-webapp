@@ -1,4 +1,8 @@
-import { VolumeUpIcon as VolumeDownIcon } from "@heroicons/react/outline";
+import {
+  VolumeUpIcon as VolumeDownIcon,
+  MicrophoneIcon,
+  PlusIcon,
+} from "@heroicons/react/outline";
 import {
   RewindIcon,
   SwitchHorizontalIcon,
@@ -103,6 +107,8 @@ function Player() {
       </div>
       {/* Right */}
       <div className="flex items-center space-x-3 md:space-x-4 justify-end pr-5">
+        <MicrophoneIcon className="button" />
+        <PlusIcon className="button" />
         <VolumeDownIcon
           onClick={() => {
             volume > 0 && setVolume(volume - 10);
